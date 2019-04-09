@@ -8,8 +8,10 @@
     "format": "prettier './**/*.{ts,tsx}' --write",
     "format-check": "prettier './**/*.{ts,tsx}' --check",
     "start": "next start",
+    "storybook": "start-storybook -p 6006",
     "type-check": "tsc",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -19,10 +21,19 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/react": "^5.0.6",
     "@types/next": "^7.0.6",
     "@types/react": "^16.4.16",
     "@types/react-dom": "16.0.11",
+    "@types/storybook__react": "^4.0.1",
     "@zeit/next-bundle-analyzer": "^0.1.2",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react-app": "^7.0.2",
+    "fork-ts-checker-webpack-plugin": "^1.0.1",
     "prettier": "^1.16.4",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",

@@ -5,9 +5,9 @@ others.
 
 Originally created from [with-typescript](https://github.com/zeit/next.js/tree/master/examples/with-typescript) example app for Next.js.
 
-## Running
+## Instructions
 
-Start in development mode:
+Start app in development mode:
 
 ```bash
 $ yarn dev
@@ -19,17 +19,23 @@ Build and start production build:
 $ yarn build && yarn start
 ```
 
-## Run tests
+### Storybook
+
+```bash
+$ yarn storybook
+```
+
+### Tests
 
 _TODO_
 
-## Run linter
+### Linter
 
 ```
 $ yarn lint
 ```
 
-## Formatting
+### Formatting
 
 Check formatting
 
@@ -43,7 +49,7 @@ Run formatting
 $ yarn format
 ```
 
-## Analyze build
+### Analyze bundles
 
 ```bash
 $ [BUNDLE_ANALYZE={client,server,both}] yarn analyze
