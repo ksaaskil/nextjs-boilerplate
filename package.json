@@ -5,6 +5,8 @@
     "analyze": "BUNDLE_ANALYZE=both next build",
     "dev": "next",
     "build": "next build",
+    "format": "prettier './**/*.{ts,tsx}' --write",
+    "format-check": "prettier './**/*.{ts,tsx}' --check",
     "start": "next start",
     "type-check": "tsc",
     "lint": "tslint --project ."

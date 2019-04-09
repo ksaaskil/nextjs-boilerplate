@@ -15,7 +15,9 @@ type Props = {
 };
 
 class ListDetailPage extends React.Component<Props> {
-  public static getInitialProps = async ({ query }: NextContext<RequestQuery>) => {
+  public static getInitialProps = async ({
+    query,
+  }: NextContext<RequestQuery>) => {
     try {
       const item = await findData(query.id);
       return { item };
